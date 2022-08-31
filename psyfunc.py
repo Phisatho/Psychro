@@ -20,21 +20,21 @@ ZEROC = 273.15
 INVALID = -99999
 
 
-def Tw_Tdp(T, Tdp, P):        #error
+def Tw_Tdp(T, Tdp, P):        
     if Tdp <= T:
         W = W_Tdp(Tdp, P)
         return Tw_W(T, W, P)
     else:
         return INVALID
 
-def Tw_Phi(T, Phi, P):           #error
+def Tw_Phi(T, Phi, P):           
     if (Phi >= 0 and Phi <= 1):
        W = W_Phi(T, Phi, P)
        return Tw_W(T, W, P)
     else:
          return INVALID
 
-def Phi_Tdp(T, Tdp):              #OK
+def Phi_Tdp(T, Tdp):              
     if (Tdp <= T):
        Pv = Pvs_T(Tdp)
        Pvs = Pvs_T(T)
@@ -42,40 +42,40 @@ def Phi_Tdp(T, Tdp):              #OK
     else:
          return INVALID
 
-def Phi_Tw(T, Tw, P):            #error
+def Phi_Tw(T, Tw, P):            
     if (Tw <= T):
        W = W_Tw(T, Tw, P)
        return Phi_W(T, W, P)
     else:
          return INVALID
 
-def Tdp_Phi(T, Phi):             #OK
+def Tdp_Phi(T, Phi):             
     if (Phi >= 0 and Phi <= 1):
        Pv = Pv_Phi(T, Phi)
        return Tdp_Pv(T, Pv)
     else:
          return INVALID
 
-def Tdp_Tw(T, Tw, P):            #error
+def Tdp_Tw(T, Tw, P):            
     if (Tw <= T):
        W = W_Tw(T, Tw, P)
        return Tdp_W(T, W, P)
     else:
          return INVALID
 
-def Pv_Phi(T, Phi):              #OK
+def Pv_Phi(T, Phi):              
     if (Phi >= 0 and Phi <= 1):
        return Phi * Pvs_T(T)
     else:
          return INVALID
 
-def Phi_Pv(T, Pv):               #OK
+def Phi_Pv(T, Pv):               
     if (Pv >= 0):
        return Pv / Pvs_T(T)
     else:
          return INVALID
 
-def Tdp_Pv(T, Pv):               #ok
+def Tdp_Pv(T, Pv):               
         if Pv >= 0:
            VP = float(Pv) / KILO
            alpha = log(VP)
@@ -90,7 +90,7 @@ def Tdp_Pv(T, Pv):               #ok
         else:
              return INVALID
 
-def Pv_Tdp(Tdp):                  #OK
+def Pv_Tdp(Tdp):                  
     return Pvs_T(Tdp)
 
 def Tw_W(T, W, P):
@@ -175,9 +175,7 @@ def Pvs_T(T):
                     6.2215701e-7 * Tk *Tk + 2.0747825e-9 * pow(Tk, 3) -
                     9.484024E-13*pow(T, 4) + 4.1635019 * log(Tk))
                     
-##                    LnPws = (-5.6745359E+03/T + 6.3925247 - 9.677843E-03*T + 6.2215701E-07*T*T
-##        + 2.0747825E-09*pow(T, 3) - 9.484024E-13*pow(T, 4) + 4.1635019*log(T));
-##                    
+                  
                     
                     
       elif (T >0 and T <= 200):
@@ -288,7 +286,7 @@ def Tsat_W(W, P):
 def main():
 #    print('\n')
 #    print '               Psychrometric Functions in Python'
-##    print '1)  Phi_Tw(23.0, 16.0, 101325)*100      = ', 100 * Phi_Tw(23.0, 16.0, 101325)
+#    print '1)  Phi_Tw(23.0, 16.0, 101325)*100      = ', 100 * Phi_Tw(23.0, 16.0, 101325)
 #    print '2)  W_Tw(23, 16, 101325)                = ', W_Tw(23, 16, 101325)
 #    print '3)  Pvs_T(23)                           = ', Pvs_T(23)
 #    print '7)  Tw_Phi(23,0.484, 101325)            = ', Tw_Phi(23,0.484, 101325)
@@ -308,12 +306,12 @@ def main():
 #    print '21) W_Pv(1360, 101325)                  = ', W_Pv(1360, 101325)
 #    print '22) Pv_W(0.008463, 101325)              = ', Pv_W(0.008463, 101325)
 #    print '23) Hd_T(23)                            = ', Hd_T(23)
- #   print '24) Dd_T(23, 101325)                    = ', Dd_T(23, 101325)
+#    print '24) Dd_T(23, 101325)                    = ', Dd_T(23, 101325)
 #    print '25) Vd_T(23, 101325)                    = ', Vd_T(23, 101325)
 #    print '26) Pvs_T(23)                           = ', Pvs_T(23)
 #    print '27) Ws_T(23, 101325)                    = ', Ws_T(23, 101325)
 #    print '28) Hs_T(23, 101325)                    = ', Hs_T(23, 101325)
- #   print '29) Pvdef(23, 0.00846284, 101325)       = ', Pvdef(23, 0.00846284, 101325)
+#    print '29) Pvdef(23, 0.00846284, 101325)       = ', Pvdef(23, 0.00846284, 101325)
 #    print '30) Sw_W(23, 0.00846284, 101325)        = ', Sw_W(23, 0.00846284, 101325)
 #    print '31) H_W(23, 0.00846284)                 = ', H_W(23, 0.00846284)
 #    print'32) V_W(23, 0.00846284, 101325)          = ', V_W(23, 0.00846284, 101325)
