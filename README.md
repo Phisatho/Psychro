@@ -11,7 +11,7 @@ The function names consist of two parts separated by an underscore. The first pa
 | Tw        | Wetbulb Tempearture | Centigrade (C)|
 | Tdp       | Dewpoint Temperature| Centigrade (C)|
 | Phi       | Relative Humidity   | Fraction      |
-| W         | humidity Ratio      | kg/kg         |
+| W         | Humidity Ratio      | kg/kg         |
 | Ws        | Humidity Ratio at Saturation|  kg/kg|
 | Pv        | Vapour Pressure     | Pa            |
 | Pvs       | Vapour Pressure at Saturation| Pa   |
