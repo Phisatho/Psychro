@@ -8,9 +8,9 @@
 # Copyright:   (c) Shibu 2012
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-from __future__ import print_function
+
 from math import *
-from decimal import *
+
 
 
 Rgas = 8.314472
