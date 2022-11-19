@@ -1,5 +1,6 @@
 # Psychro
 Psychrometric Functions in Python
+A simple psyscrometric chart coded in TKinter and uses the library is also included.
 
 # Naming Conventions
 The function names consist of two parts separated by an underscore. The first part indicates the output of the function and the second part indicates the inputs. For instance: Phi_Tw(T, Tw, P) calculates the relative humidity - given: Wetbulb temperature, dry bulb temperature and atmospheric pressure. For brevity, drybulb temperature and atmospheric pressure are not included in function names.
@@ -8,7 +9,7 @@ The function names consist of two parts separated by an underscore. The first pa
 | Notation  | Parameter           | Unit          |
 | --------- |:-------------:      | -----:        |
 | T         | Drybulb Temperature | Centigrade (C)|
-| Tw        | Wetbulb Tempearture | Centigrade (C)|
+| Tw        | Wetbulb Temperature | Centigrade (C)|
 | Tdp       | Dewpoint Temperature| Centigrade (C)|
 | Phi       | Relative Humidity   | Fraction      |
 | W         | Humidity Ratio      | kg/kg         |
@@ -24,3 +25,48 @@ The function names consist of two parts separated by an underscore. The first pa
 | Vd        | Specific Volume of Dry Air|   m^3/kg      |
 | P         | Atmospheric Pressure|   Pa            |
 | Pz        | Atmospheric Pressure at Elevation| Pa |
+
+# Functions
+| Function          | Calculates  | Given|
+|--------------------|-------------|---------|
+| Tw_Tdp(T, Tdp, P) | Tw          | T, Tdp, P|
+| Tw_Phi(T, Phi, P) |
+| Phi_Tdp(T, Tdp)  |
+| Phi_Tw(T, Tw, P)|
+| Tdp_Phi(T, Phi)|
+| Tdp_Tw(T, Tw, P)|
+| Pv_Phi(T, Phi)|
+| Phi_Pv(T, Pv)|
+| Tdp_Pv(T, Pv)|
+| Pv_Tdp(Tdp)|
+| Tw_W(T, W, P)|
+| W_Tw(T, Tw, P)|
+| W_Phi(T, Phi, P)|
+| Phi_W(T, W, P)|
+| W_Tdp(Tdp, P)|
+| Tdp_W(T, W, P)|
+| W_Pv(Pv, P)|
+| Pv_W(W, P)|
+| Hd_T(T)|
+| Dd_T(T, P)|
+| Vd_T(T, P)|
+| Pvs_T(T)|
+| Ws_T(T, P)|
+| Hs_T(T, P)|
+| Pvdef(T, W, P)|
+| Sw_W(T, W, P)|
+| H_W(T, W)|
+| V_W(T, W, P)|
+| D_W(T, W, P)|
+| P_z(z)|
+| T_z(z)
+| Pz_P(T, z, P)|
+| P_Pz(T, z, P0)|
+| CTOK(T)|
+| T_TwW(Tw, W, P)|
+| T_HW(H, W)|
+| Ts_H(H, P)|
+| Ts_V(V, P)|
+| T_VW(V, W, P)|
+| Tsat_W(W, P)|
+| 
