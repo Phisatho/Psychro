@@ -8,9 +8,9 @@ The function names consist of two parts separated by an underscore. The first pa
 # Notations and Units
 | Notation  | Parameter           | Unit          |
 | --------- |:-------------:      | -----:        |
-| T         | Drybulb Temperature | Centigrade (C)|
-| Tw        | Wetbulb Temperature | Centigrade (C)|
-| Tdp       | Dewpoint Temperature| Centigrade (C)|
+| T         | Drybulb Temperature | Celsius (C)|
+| Tw        | Wetbulb Temperature | Celsius (C)|
+| Tdp       | Dewpoint Temperature| Celsius (C)|
 | Phi       | Relative Humidity   | Fraction      |
 | W         | Humidity Ratio      | kg/kg         |
 | Ws        | Humidity Ratio at Saturation|  kg/kg|
