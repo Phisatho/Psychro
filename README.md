@@ -8,7 +8,7 @@ The function names consist of two parts separated by an underscore. The first pa
 # Notations and Units
 | Notation  | Parameter           | Unit          |
 | --------- |:-------------:      | -----:        |
-| T         | Drybulb Temperature | Celsius (&degC)|
+| T         | Drybulb Temperature | Celsius (&deg;C)|
 | Tw        | Wetbulb Temperature | Celsius (C)|
 | Tdp       | Dewpoint Temperature| Celsius (C)|
 | Phi       | Relative Humidity   | Fraction      |
