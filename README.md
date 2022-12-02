@@ -28,22 +28,23 @@ The function names consist of two parts separated by an underscore. The first pa
 
 # Functions
 Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fracrtion - devide percent by 100.
+Humidity Ratio is unitless (kg/kg) - not g/kg.
 | Function          | Calculates  | Given|
 |--------------------|-------------|---------|
-| Tw_Tdp(T, Tdp, P) | Wet Bulb          | T, Tdp, P|
-| Tw_Phi(T, Phi, P) |Wet Bulb           |T, Phi, P|
+| Tw_Tdp(T, Tdp, P) | Wet Bulb Temperature  | T, Tdp, P|
+| Tw_Phi(T, Phi, P) |Wet Bulb  Temperature       |T, Phi, P|
 | Phi_Tdp(T, Tdp)  | Relative Humidity (fraction) | T, Tdp|
-| Phi_Tw(T, Tw, P)| RH (fraction) | T, Tw, P|
-| Tdp_Phi(T, Phi)| Dew Point | T, Phi|
-| Tdp_Tw(T, Tw, P)| Dew Point | T, Tw, P|
-| Pv_Phi(T, Phi)| Vapour Pressure | T, Phi|
-| Phi_Pv(T, Pv)|RH (fraction) | T, Pv|
-| Tdp_Pv(T, Pv)| Dew Point | T, Pv |
-| Pv_Tdp(Tdp)| Vapour Pressure | Tdp |
-| Tw_W(T, W, P)| Wet Bulb | T, W, P |
+| Phi_Tw(T, Tw, P)| Relative Humidity (fraction) | T, Tw, P|
+| Tdp_Phi(T, Phi)| Dew Point Temperature | T, Phi|
+| Tdp_Tw(T, Tw, P)| Dew Point Temperature | T, Tw, P|
+| Pv_Phi(T, Phi)| Water Vapour Pressure | T, Phi|
+| Phi_Pv(T, Pv)|Relative Humidity (fraction) | T, Pv|
+| Tdp_Pv(T, Pv)| Dew Point Temperature | T, Pv |
+| Pv_Tdp(Tdp)| Water Vapour Pressure | Tdp |
+| Tw_W(T, W, P)| Wet Bulb Temperature | T, W, P |
 | W_Tw(T, Tw, P)| Humidity Ratio | T, Tw, P |
 | W_Phi(T, Phi, P)| Humidity Ratio | T, Phi, P |
-| Phi_W(T, W, P)| RH
+| Phi_W(T, W, P)| Relative Humidity | T, W, P 
 | W_Tdp(Tdp, P)|
 | Tdp_W(T, W, P)|
 | W_Pv(Pv, P)|
