@@ -9,8 +9,8 @@ The function names consist of two parts separated by an underscore. The first pa
 | Notation  | Parameter           | Unit          |
 | --------- |:-------------:      | -----:        |
 | T         | Drybulb Temperature | Celsius (&deg;C)|
-| Tw        | Wetbulb Temperature | Celsius (C)|
-| Tdp       | Dewpoint Temperature| Celsius (C)|
+| Tw        | Wetbulb Temperature | Celsius (&deg;C)|
+| Tdp       | Dewpoint Temperature| Celsius (&deg;C)|
 | Phi       | Relative Humidity   | Fraction      |
 | W         | Humidity Ratio      | kg/kg         |
 | Ws        | Humidity Ratio at Saturation|  kg/kg|
@@ -29,13 +29,13 @@ The function names consist of two parts separated by an underscore. The first pa
 # Functions
 | Function          | Calculates  | Given|
 |--------------------|-------------|---------|
-| Tw_Tdp(T, Tdp, P) | Tw          | T, Tdp, P|
-| Tw_Phi(T, Phi, P) |
-| Phi_Tdp(T, Tdp)  |
-| Phi_Tw(T, Tw, P)|
-| Tdp_Phi(T, Phi)|
-| Tdp_Tw(T, Tw, P)|
-| Pv_Phi(T, Phi)|
+| Tw_Tdp(T, Tdp, P) | Wet Bulb          | T, Tdp, P|
+| Tw_Phi(T, Phi, P) |Wet Bulb           |T, Phi, P|
+| Phi_Tdp(T, Tdp)  | RH (fraction) | T, Tdp|
+| Phi_Tw(T, Tw, P)| RH (fraction) | T, Tw, P|
+| Tdp_Phi(T, Phi)| Dew Point | T, Phi|
+| Tdp_Tw(T, Tw, P)| Dew Point | T, Tw, P|
+| Pv_Phi(T, Phi)| Vaour Pressure | T, Phi|
 | Phi_Pv(T, Pv)|
 | Tdp_Pv(T, Pv)|
 | Pv_Tdp(Tdp)|
