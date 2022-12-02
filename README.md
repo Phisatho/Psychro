@@ -6,7 +6,7 @@ A simple psyscrometric chart coded in TKinter and uses the library is also inclu
 The function names consist of two parts separated by an underscore. The first part indicates the output of the function and the second part indicates the inputs. For instance: Phi_Tw(T, Tw, P) calculates the relative humidity - given: Wetbulb temperature, dry bulb temperature and atmospheric pressure. For brevity, drybulb temperature and atmospheric pressure are not included in function names.
 
 # Notations and Units
-| Notation  | Parameter           | Unit          |
+| Notation  | Parameter           | Unit          | Notes |
 | --------- |:-------------:      | -----:        |
 | T         | Drybulb Temperature | Celsius (&deg;C)|
 | Tw        | Wetbulb Temperature | Celsius (&deg;C)|
@@ -29,7 +29,7 @@ The function names consist of two parts separated by an underscore. The first pa
 # Functions
 Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fracrtion - devide percent by 100.
 Humidity Ratio is unitless (kg/kg) - not g/kg.
-| Function          | Calculates  | Given|
+| Function          | Calculates  | Given| Notes |
 |--------------------|-------------|---------|
 | Tw_Tdp(T, Tdp, P) | Wet Bulb Temperature  | T, Tdp, P|
 | Tw_Phi(T, Phi, P) |Wet Bulb  Temperature       |T, Phi, P|
