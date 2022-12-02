@@ -27,7 +27,7 @@ The function names consist of two parts separated by an underscore. The first pa
 | Pz        | Atmospheric Pressure at Elevation| Pa |
 
 # Functions
-Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fracrtion - devide percent by 100.
+Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fraction - divide percent by 100.
 Humidity Ratio is unitless (kg/kg) - not g/kg.
 | Function          | Calculates  | Given| Notes |
 |--------------------|-------------|---------|------|
