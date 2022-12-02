@@ -30,7 +30,7 @@ The function names consist of two parts separated by an underscore. The first pa
 Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fracrtion - devide percent by 100.
 Humidity Ratio is unitless (kg/kg) - not g/kg.
 | Function          | Calculates  | Given| Notes |
-|--------------------|-------------|---------|
+|--------------------|-------------|---------|------|
 | Tw_Tdp(T, Tdp, P) | Wet Bulb Temperature  | T, Tdp, P|
 | Tw_Phi(T, Phi, P) |Wet Bulb  Temperature       |T, Phi, P|
 | Phi_Tdp(T, Tdp)  | Relative Humidity (fraction) | T, Tdp|
