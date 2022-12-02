@@ -27,6 +27,7 @@ The function names consist of two parts separated by an underscore. The first pa
 | Pz        | Atmospheric Pressure at Elevation| Pa |
 
 # Functions
+Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100 to obtain %. Where RH is input, use, fracrtion - devide percent by 100.
 | Function          | Calculates  | Given|
 |--------------------|-------------|---------|
 | Tw_Tdp(T, Tdp, P) | Wet Bulb          | T, Tdp, P|
@@ -36,7 +37,8 @@ The function names consist of two parts separated by an underscore. The first pa
 | Tdp_Phi(T, Phi)| Dew Point | T, Phi|
 | Tdp_Tw(T, Tw, P)| Dew Point | T, Tw, P|
 | Pv_Phi(T, Phi)| Vaour Pressure | T, Phi|
-| Phi_Pv(T, Pv)|
+| Phi_Pv(T, Pv)|RH (fraction) | T, Pv|
+
 | Tdp_Pv(T, Pv)|
 | Pv_Tdp(Tdp)|
 | Tw_W(T, W, P)|
