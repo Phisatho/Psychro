@@ -19,9 +19,9 @@ The function names consist of two parts separated by an underscore. The first pa
 | H         | Enthalpy            |   J/kg            |
 | Hd        | Enthalpy of Dry Air |   J/kg            |
 | Hs        | Enthalpy at Saturation| J/kg            |
-| D         | Density             |  kg/m^3             |
-| Dd        | Density of Dry Air  | kg/m^3              |
-| V         | Specific Volume     | m^3/kg              |
+| D         | Density             |  kg/m<sup>3</sup>             |
+| Dd        | Density of Dry Air  | kg/m<sup>3</sup>              |
+| V         | Specific Volume     | m<sup>3</sup>/kg              |
 | Vd        | Specific Volume of Dry Air|   m<sup>3</sup>/kg      |
 | P         | Atmospheric Pressure|   Pa            |
 | Pz        | Atmospheric Pressure at Elevation| Pa |
