@@ -22,7 +22,7 @@ The function names consist of two parts separated by an underscore. The first pa
 | D         | Density             |  kg/m^3             |
 | Dd        | Density of Dry Air  | kg/m^3              |
 | V         | Specific Volume     | m^3/kg              |
-| Vd        | Specific Volume of Dry Air|   m^3/kg      |
+| Vd        | Specific Volume of Dry Air|   m<sup>3</sup>/kg      |
 | P         | Atmospheric Pressure|   Pa            |
 | Pz        | Atmospheric Pressure at Elevation| Pa |
 
