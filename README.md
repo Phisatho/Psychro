@@ -32,19 +32,18 @@ Note: Relative Humidity is calculated as fraction - not percent. Multiply by 100
 |--------------------|-------------|---------|
 | Tw_Tdp(T, Tdp, P) | Wet Bulb          | T, Tdp, P|
 | Tw_Phi(T, Phi, P) |Wet Bulb           |T, Phi, P|
-| Phi_Tdp(T, Tdp)  | RH (fraction) | T, Tdp|
+| Phi_Tdp(T, Tdp)  | Relative Humidity (fraction) | T, Tdp|
 | Phi_Tw(T, Tw, P)| RH (fraction) | T, Tw, P|
 | Tdp_Phi(T, Phi)| Dew Point | T, Phi|
 | Tdp_Tw(T, Tw, P)| Dew Point | T, Tw, P|
-| Pv_Phi(T, Phi)| Vaour Pressure | T, Phi|
+| Pv_Phi(T, Phi)| Vapour Pressure | T, Phi|
 | Phi_Pv(T, Pv)|RH (fraction) | T, Pv|
-
-| Tdp_Pv(T, Pv)|
-| Pv_Tdp(Tdp)|
-| Tw_W(T, W, P)|
-| W_Tw(T, Tw, P)|
-| W_Phi(T, Phi, P)|
-| Phi_W(T, W, P)|
+| Tdp_Pv(T, Pv)| Dew Point | T, Pv |
+| Pv_Tdp(Tdp)| Vapour Pressure | Tdp |
+| Tw_W(T, W, P)| Wet Bulb | T, W, P |
+| W_Tw(T, Tw, P)| Humidity Ratio | T, Tw, P |
+| W_Phi(T, Phi, P)| Humidity Ratio | T, Phi, P |
+| Phi_W(T, W, P)| RH
 | W_Tdp(Tdp, P)|
 | Tdp_W(T, W, P)|
 | W_Pv(Pv, P)|
