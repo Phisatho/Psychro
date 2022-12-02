@@ -7,7 +7,7 @@ The function names consist of two parts separated by an underscore. The first pa
 
 # Notations and Units
 | Notation  | Parameter           | Unit          | Notes |
-| --------- |:-------------:      | -----:        |
+| --------- |:-------------:      | -----:        | -----: |
 | T         | Drybulb Temperature | Celsius (&deg;C)|
 | Tw        | Wetbulb Temperature | Celsius (&deg;C)|
 | Tdp       | Dewpoint Temperature| Celsius (&deg;C)|
